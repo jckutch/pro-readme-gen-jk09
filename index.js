@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -28,7 +28,7 @@ const questions = [
     {
         type: 'input',
         name: 'contributing',
-        message: 'How does the user contribute to the project repo?',
+        message: 'How does the user contribute to the project?',
     },
     {
         type: 'input',
@@ -39,7 +39,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What kind of license should your project have?',
-        choices: ['APACHE 2.0', 'GPL 3.0', 'MIT', 'MPL 2.0', 'None']
+        choices: ['APACHE', 'GPL', 'MIT', 'Mozilla', 'None']
     },
     {
         type: 'input',
@@ -56,7 +56,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
-        err ? console.error(err) : console.log(`Success! Your ${data.title} README.md file is created.`)
+        err ? console.error(err) : console.log(`Success! Your README.md file has been created.`)
     );
 }
 
@@ -64,7 +64,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
     .prompt(questions)
-    .then ((data) => {
+    .then ((answers) => {
         const data = generateMarkdown(answers);
         writeToFile('README.md', data);
         console.log(answers);
