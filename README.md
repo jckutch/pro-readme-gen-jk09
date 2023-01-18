@@ -1,43 +1,42 @@
-# Travel Exotic
-  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+# 
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.txt)
 
-  ##Table of Contents
+  ## Table of Contents
   * [Description](#description)
   * [Usage](#usage)
   * [Installation](#installation)
-  * [Testing](#test)
+  * [Testing](#testing)
   * [License](#license)
-  * [Contributing to This Repo](#contributing)
-  * [Questions / Contact Details](#questions)
+  * [Contribute](#contribute)
+  * [Contact](#contact)
   
   <a name='description'></a>
   ## Description
-  Review of exotic destinations
+  
 
   <a name='usage'></a>
   ## Usage
-  Its Adictive
+  
 
   <a name='installation'></a>
   ## Installation
-  npm i inquirer
+  
 
-  <a name='test'></a>
+  <a name='testing'></a>
   ## Testing
-  There are no test
+  undefined
+
+  <a name='contribute'></a>
+  ## Contribute
+  Provide detailed instruction for how to contribute this project.
+  undefined
+  
+  <a name='contact'></a>
+  ## Contact
+  Email:  <br /> Github link: https://github.com/
 
   <a name='license'></a>
   ## License
-  The application is covered under a Mozilla license.
+  Licensed under <br /> [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.txt)
 
-  <a name='contributing'></a>
-  ## Contributing to This Repo
-  Email me.
-
-  <a name='questions'></a>
-  ## Questions
-  Contact Me at Github:  
-  John Kutch
-
-  ## License
-  Licensed under the [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://www.mozilla.org/en-US/MPL/2.0/)
+ 

@@ -27,19 +27,19 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contributing',
+        name: 'contribute',
         message: 'How does the user contribute to the project?',
     },
     {
         type: 'input',
-        name: 'test',
+        name: 'testing',
         message: 'What should the user know about tests for the project?',
     },
     {
         type: 'list',
         name: 'license',
         message: 'What kind of license should your project have?',
-        choices: ['APACHE', 'GPL', 'MIT', 'Mozilla', 'None']
+        choices: ['Apache', 'GPL', 'MIT', 'Mozilla', 'None']
     },
     {
         type: 'input',
