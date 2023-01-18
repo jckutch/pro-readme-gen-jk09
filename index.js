@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// TODO: Create an array of questions for user input
+// Array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -23,23 +23,17 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'What should a user know about using the project?',
+        message: 'What will the project be used for?',
     },
     {
         type: 'input',
-        name: 'contribute',
+        name: 'contributing',
         message: 'How does the user contribute to the project?',
     },
     {
         type: 'input',
-        name: 'testing',
+        name: 'tests',
         message: 'What should the user know about tests for the project?',
-    },
-    {
-        type: 'list',
-        name: 'license',
-        message: 'What kind of license should your project have?',
-        choices: ['Apache', 'GPL', 'MIT', 'Mozilla', 'None']
     },
     {
         type: 'input',
@@ -51,22 +45,28 @@ const questions = [
         name: 'email',
         message: 'What is your email address?'
     },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What kind of license should your project have?',
+        choices: ['Apache', 'GPL', 'MIT', 'Mozilla', 'None']
+    },
 ];
 
-// TODO: Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) =>
         err ? console.error(err) : console.log(`Success! Your README.md file has been created.`)
     );
 }
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {
     inquirer
     .prompt(questions)
     .then ((answers) => {
         const data = generateMarkdown(answers);
-        writeToFile('README.md', data);
+        writeToFile('professionalREADME.md', data);
         console.log(answers);
     })
 }

@@ -31,7 +31,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return`Licensed under <br /> ${renderLicenseLink(license)}`
+    return`Application is covered under <br /> ${renderLicenseLink(license)}`
       }else{
         return '';
       }
@@ -46,10 +46,10 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Usage](#usage)
   * [Installation](#installation)
-  * [Testing](#testing)
+  * [Tests](#tests)
+  * [Contributing](#contributing)
+  * [Questions](#questions)
   * [License](#license)
-  * [Contribute](#contribute)
-  * [Contact](#contact)
   
   <a name='description'></a>
   ## Description
@@ -63,24 +63,22 @@ function generateMarkdown(data) {
   ## Installation
   ${data.installation}
 
-  <a name='testing'></a>
-  ## Testing
-  ${data.test}
+  <a name='tests'></a>
+  ## Tests
+  ${data.tests}
 
-  <a name='contribute'></a>
-  ## Contribute
-  Provide detailed instruction for how to contribute this project.
+  <a name='contributing'></a>
+  ## Contributing
+  Provide detailed instructions for contributing to project.
   ${data.contributing}
   
-  <a name='contact'></a>
-  ## Contact
-  Email: ${data.email} <br /> Github link: https://github.com/${data.github}
+  <a name='questions'></a>
+  ## Questions
+  Github link: https://github.com/${data.github} <br /> For any additonal question, please reach me via my Email: ${data.email}
 
   <a name='license'></a>
   ## License
   ${renderLicenseSection(data.license)}
-
- 
 `;
 }
 
