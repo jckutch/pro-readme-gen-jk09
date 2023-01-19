@@ -1,7 +1,7 @@
 {
   "name": "pro-readme-gen-jk09",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://mit-license.org/)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/jckutch/pro-readme-gen-jk09#readme",
   "dependencies": {
-    "inquirer": "^8.2.5"
+    "inquirer": "^8.2.4"
   }
 }
