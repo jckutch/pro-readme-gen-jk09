@@ -52,7 +52,7 @@ Following the command line prompts, you can generate a professional README file 
 Repository Link:  https://github.com/jckutch/pro-readme-gen-jk09
 
 ## Mockup
-Link to Mockup Video: https://drive.google.com/file/d/1qlC9N179x-VFqDKe41bnEM4wCPi4JAPI/view 
+Link to Mockup Video: https://drive.google.com/file/d/1bq02iIMXtj_jUD8WF7KfEtTZkLgob8pm/view
 
 ## License 
 Licensed under <br /> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://mit-license.org/).
